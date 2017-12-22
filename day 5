@@ -1,0 +1,130 @@
+********************************************2 d array printing********************************
+#include<stdio.h>
+void main()
+{
+	// Initialize 2D array
+	char colour[4][10] = {"Blue", "Red", "Orange","Yellow"};
+	     int i=0;
+	// Printing Strings stored in 2D array
+	for (i = 0; i < 4; i++)
+		printf("%s",colour[i]);
+
+
+}
+
+*******************************************array argument functions*******************************
+
+#include <stdio.h>
+#include <conio.h>
+
+int main(int a, char *b[])
+{
+    clrscr();
+    int i;
+    if( a >= 2 )
+    {
+	printf("The arguments supplied are:\n");
+	for(i = 1; i < a; i++)
+	{
+	    printf("%s\t", b[i]);
+	}
+    }
+    else
+    {
+	printf("argument list is empty.\n");
+    }
+    return 0;
+}
+
+*********************************************enum for the constants*****************************************
+
+#include <stdio.h>
+enum day {sunday = 1, monday, tuesday = 5,
+          wednesday, thursday = 10, friday, saturday};
+ 
+int main()
+{
+    printf("%d %d %d %d %d %d %d", sunday, monday, tuesday,
+            wednesday, thursday, friday, saturday);
+    return 0;
+}
+
+*************************************************enum function printing******************************************
+#include<stdio.h>
+enum state{a=0,b,c};
+enum state d=2;
+
+
+enum state findstate()
+{
+return d;
+}
+int main()
+{
+(findstate() == a) ? printf("a") : printf("not working");
+return 0;
+}
+
+
+*****************************************************error handling************************************************
+
+#include <stdio.h>       
+#include <errno.h>       
+#include <string.h> 
+ 
+int main ()
+{
+    FILE *fp;
+ 
+    /* 
+        If a file, which does not exists, is opened,
+        we will get an error
+    */ 
+    fp = fopen("IWillReturnError.txt", "r");
+ 
+    printf("Value of errno: %d\n ", errno);
+    perror("Message from perror");
+ 
+    return 0;
+}
+
+********************************************************read and write into the file**************************************
+
+#include<stdio.h>  
+#include<stdio.h>
+#include<conio.h>
+void main(){
+FILE *fp;
+FILE *fk;
+char c;
+clrscr();
+fk=fopen("file.txt","r");
+fp=fopen("file1.txt","a+");
+
+while ((c=fgetc(fk) )!=EOF)
+{
+fprintf(fp,"%c",c);
+ }
+
+fclose(fk);
+fclose(fp);
+getch();
+}    
+
+**********************************************************factorial of num*******************************************************
+
+#include<stdio.h>  
+int factorial (int num)    
+{    
+    if ( num < 0)    
+        return -1; 
+    if (num == 0)    
+        return 1; 
+    return (num * factorial (num -1));    
+}   
+int main(){    
+int fact=0;    
+fact=factorial(10);
+printf("\n factorial of 10 is %d",fact);    
+return 0;  
+}    
