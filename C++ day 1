@@ -1,3 +1,5 @@
+**************************************************USING STRUCT IN PROGRAM*****************************
+
 #include<iostream>
 using namespace std;
 
@@ -24,4 +26,38 @@ int main()
     return 0;
 }
 
+***************************************************DISPLAYUING 0 TO 10 ************************************************
+
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int i;
+    cout<<"\nNumbers to display"<<endl;
+    for(i=0;i<11;i++)
+    {
+        cout<<i<<endl;
+        
+        }
+        return 0;
+}
+
+*********************************************** SWAPPING OF TWO VARIABLE *******************************************
+
+#include<iostream>
+ using namespace std;
+ 
+ int main()
+ {
+     int a,b;
+     cin>>a>>b;
+     a=a+b-(b=a);
+     cout<<"Values of a and b : "<<a <<endl<<b;
+     return 0;
+ }
+ 
+ 
+ 
+ 
 
