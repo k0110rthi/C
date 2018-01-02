@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+struct stud
+{
+    char name[50];
+    int roll_no;
+    int marks;
+};
+int main()
+{
+    stud s;
+    cout<<"\nEnter the name : ";
+    cin.get(s.name, 50);
+    cout<<"\nEnter the roll_no :";
+    cin>>s.roll_no;
+    cout<<"\nEnter the marks : ";
+    cin>>s.marks;
+    
+    cout<<"\nStudent details"<< endl;
+    cout<<"Name :"<< s.name << endl;
+    cout<<"Roll no :"<< s.roll_no <<endl;
+    cout<<"Mark :"<< s.marks;
+    return 0;
+}
+
+
