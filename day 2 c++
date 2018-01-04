@@ -1,0 +1,51 @@
+#include<iostream>
+
+
+using namespace std;
+
+class stud
+{
+    int a,b;
+    public:
+    
+    stud(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    void display()
+    {
+        cout<<"values of a and b:"<<a<<"\t"<<b;
+    }
+};
+    int main()
+    {
+        stud s1(10,20);
+        s1.display();
+        return 0;
+    }
+    
+    
+    
+    
+    #include<iostream>
+
+using namespace std;
+
+class cube
+{
+
+    public:
+       int a;
+    cube()
+    {
+        a=10;
+    }
+    
+};
+int main()
+{
+    cube c;
+    cout<<c.a;
+    return 0;
+}
